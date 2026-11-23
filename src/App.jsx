@@ -11,7 +11,7 @@ function App() {
   const addMenu = (name) => {
     setMenus([...menus, {
       id: Date.now(),
-      emoji: '🍽️',
+      emoji: '👍',
       name: name,
       votes: 0
     }])
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className='app'>
-      <Header title={'🍱오늘 점심 뭐 먹지?'} />
+      <Header title={'⚖️오늘의 밸런스 게임'} />
       <AddMenu onAdd={addMenu}/>
       <ul className='menus'>
         {menus.map((m) => (
